@@ -89,7 +89,7 @@ input:hover {
   flex-basis: 50px;
   width: 40%;
   max-width: 220px;
-  font-size: 1.5em;
+  font-size: 2vw;
   font-weight: 700;
   margin: 30px auto 0;
 }

@@ -17,7 +17,6 @@ body {
   margin: auto;
   grid-template-columns: 1fr 1fr;
   width: 80vw;
-  /* min-width: 500px; */
   height: 95vh;
   margin: 2.5vh auto;
   column-gap: 50px;
