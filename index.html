@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML, CSS, animated, sign in">
+    <meta name="description" content="A sign in page with animated sign in logo">
+    <meta name="author" content="Moyeen F. Godyari">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="styles/index_styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+</head>
+
+<body>
+    <div id="grid_container">
+        <form id="flex_container">
+            <h1>Sign In</h1>
+
+            <p>Use your credentials to sign in to your account.</p>
+
+            <input type="email" placeholder="Enter email" name="email" value="" autofocus required>
+            <input type="password" placeholder="Enter password" name="password" value="" required>
+
+            <input id="submitButton" type="submit" value="Sign in">
+
+            <p class="bottom_lines">No account? <a href="sign_up.html">Create one</a></p>
+            <p class="bottom_lines"><a href="contact_us.html">Contact Us</a></p>
+        </form>
+
+        <div id="logo_container">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="images/sign_in_logo_300p.png">
+                <source media="(min-width: 768px)" srcset="images/sign_in_logo_250p.png">
+                <source media="(max-width: 768px)" srcset="images/sign_in_logo_150p.png">
+
+                <img src="images/sign_in_logo_350p.png" alt="Sign In Logo">
+            </picture>
+        </div>
+    </div>
+</body>
+
+</html>

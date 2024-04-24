@@ -1,0 +1,251 @@
+:root {
+  --form_elem_width: 60%;
+
+  --dob_elem_width: 60%;
+
+  --heading_color: rgb(50, 22, 162);
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  background-image: url("https://media.istockphoto.com/photos/forest-wooden-table-background-summer-sunny-meadow-with-green-grass-picture-id1353553203?b=1&k=20&m=1353553203&s=170667a&w=0&h=QTyTGI9tWQluIlkmwW0s7Q4z7R_IT8egpzzHjW3cSas=");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0;
+  padding: 2vh 0;
+  height: 100%;
+  width: 100%;
+}
+
+#grid_container {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;
+  align-content: center;
+  width: 90vw;
+  /* min-width: 80vw; */
+  height: 100%;
+  column-gap: 50px;
+}
+
+#flexbox_form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: rgba(195, 154, 154, 0.478);
+  padding: 6% 10%;
+  border: 1.5px solid gray;
+  border-radius: 15px;
+  box-shadow: 0 0 50px gray inset;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  align-self: center;
+  margin: 0 0 10px;
+  color: var(--heading_color);
+  font-size: 2vw;
+}
+
+.elem_containers {
+  margin: 0 0 5px;
+}
+
+label {
+  display: inline-block;
+  width: 140px;
+  color: var(--heading_color);
+}
+
+#gender_main_label {
+  display: inline-block;
+  margin: 0;
+  width: 8vw;
+  font-size: 1.06em;
+  color: var(--heading_color);
+}
+
+#gender {
+  display: inline-block;
+  position: relative;
+  right: 0;
+  width: 25vw;
+}
+
+#gender label {
+  width: 8vw;
+  color: blueviolet;
+}
+
+#bottom_container {
+  margin-top: 10px;
+  width: 96%;
+  display: flow-root;
+}
+
+#bottom_container div {
+  float: left;
+  width: 55%;
+}
+
+.bottom_lines {
+  display: inline-block;
+  font-size: 1.3vw;
+  width: 47%;
+  margin: 10px 0;
+}
+
+p:last-child {
+  margin-top: 15px;
+}
+
+#fName,
+#lName,
+#user_id,
+#email,
+#phone_no,
+input[type="password"] {
+  box-sizing: border-box;
+  width: var(--form_elem_width);
+  height: 2em;
+  padding: 10px;
+  border: 3px solid rgb(218, 218, 218);
+  border-radius: 10px;
+  font-size: large;
+  margin: 0.4em auto;
+  outline-color: rgb(255, 133, 89);
+}
+
+input[type="date"] {
+  box-sizing: border-box;
+  width: var(--dob_elem_width);
+  height: 2.5em;
+  padding: 10px;
+  border: 3px solid rgb(218, 218, 218);
+  border-radius: 10px;
+  font-size: 1.2em;
+  margin: 0.4em auto;
+  outline-color: rgb(255, 133, 89);
+}
+
+input:hover {
+  box-shadow: 0 0 6px 3px rgb(84, 143, 232) inset;
+}
+
+input[type="radio"] {
+  margin-left: 25px;
+}
+
+input[type="submit"] {
+  display: block;
+  float: right;
+  background-color: blue;
+  border-style: none;
+  border-radius: 10px;
+  color: white;
+  padding: 7px;
+  flex-basis: 50px;
+  width: 40%;
+  max-width: 220px;
+  font-size: 1.5vw;
+  font-weight: 700;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(85, 201, 170, 0.5);
+  color: rgb(233, 80, 33);
+  box-shadow: 0 0 6px 3px rgb(84, 143, 232) inset;
+}
+
+#t_and_c_container {
+  width: 100%;
+  font-size: 1.5vw;
+  margin: 10px 0;
+}
+
+#t_and_c_container label {
+  width: 80%;
+}
+
+#logo_container {
+  display: block;
+  width: 30vw;
+  margin: auto;
+}
+
+picture,
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  animation-name: image_anim;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes image_anim {
+  0% {
+    transform: scale(1.07, 1.07);
+  }
+
+  50% {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    transform: scale(1.07, 1.07);
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  #grid_container {
+    margin: none;
+  }
+
+  label[for="fName"],
+  label[for="lName"],
+  label[for="user_id"],
+  label[for="email"],
+  label[for="phone_no"],
+  label[for="password"],
+  label[for="confirm_password"] {
+    display: none;
+  }
+
+  #fName,
+  #lName,
+  #user_id,
+  i,
+  #email,
+  #phone_no,
+  input[type="password"],
+  input[type="date"] {
+    width: 100%;
+  }
+
+  label[for="dob"] {
+    width: 100%;
+  }
+
+  #gender_main_label {
+    width: 8vw;
+    font-size: 1.6vw;
+  }
+
+  input[type="radio"] {
+    margin: 0;
+  }
+
+  #gender label {
+    font-size: 1.6vw;
+    width: 5.5vw;
+  }
+}

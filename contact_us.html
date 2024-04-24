@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Contact Us page for queries and suggestions">
+    <meta name="keywords" content="HTML, CSS, Flexbox, Grid, Responsive web design">
+    <meta name="author" content="Moyeen F. Godyari">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles/contactus_styles.css">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0;">
+</head>
+
+<body>
+    <div id="grid_container">
+        <div id="logo_container">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="images/contact_us_512p.png">
+                <source media="(max-width: 600px)" srcset="images/contact_us_400p.png">
+
+                <img src="images/contact_us_400p.png" alt="Contact Us Logo">
+            </picture>
+        </div>
+
+        <form id="flex_container">
+            <h1>Contact Us</h1>
+            <div class="elem_containers">
+                <label for="name">Name: </label>
+                <input id="name" type="text" autofocus required>
+            </div>
+            <div class="elem_containers">
+                <label for="email">Email: </label>
+                <input id="email" type="email" required>
+            </div>
+            <div class="elem_containers">
+                <label for="subject">Subject: </label>
+                <input id="subject" type="text" required>
+            </div>
+            <div class="elem_containers">
+                <label for="message">Message: </label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div id="button_container">
+                <button type="submit" id="submit_button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

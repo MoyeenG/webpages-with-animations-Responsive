@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="HTML, CSS, Responsive, Sign Up">
+    <meta name="author" content="Moyeen F. Godyari">
+    <meta name="description" content="A responsive signup page with animation">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles/signup_styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div id="grid_container">
+        <form method="post" id="flexbox_form">
+            <h1>Sign Up</h1>
+
+            <div class="elem_containers">
+                <label for="fName">First Name:</label>
+                <input id="fName" type="text" name="first_name" value="" placeholder="First Name" autofocus required>
+            </div>
+
+
+            <div class="elem_containers">
+                <label for="lName">Last Name:</label>
+                <input id="lName" type="text" name="last_name" value="" placeholder="Last Name">
+            </div>
+
+
+            <div class="elem_containers">
+                <label for="user_id">User Id:</label>
+                <input type="text" id="user_id" name="user id" value="" placeholder="User Id" required>
+            </div>
+
+
+            <div class="elem_containers">
+                <p id="gender_main_label">Gender: </p>
+                <span id="gender">
+                    <input id="male" name="gender" value="male" type="radio" required>
+                    <label for="male">Male</label>
+
+                    <input id="female" name="gender" value="female" type="radio" required>
+                    <label for="female">Female</label>
+                </span>
+            </div>
+
+
+            <div class="elem_containers">
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" value="" placeholder="Email" required>
+            </div>
+
+
+            <div class="elem_containers">
+                <label for="phone_no">Phone No:</label>
+                <input id="phone_no" type="number" name="phone no" value="" placeholder="Phone Number" required>
+            </div>
+
+
+            <div class="elem_containers">
+                <label for="password">Password:</label>
+                <input id="password" type="password" name="password" value="" placeholder="Password" required>
+            </div>
+
+
+            <div class="elem_containers">
+                <label for="confirm_password">Confirm Password:</label>
+                <input id="confirm_password" type="password" name="confirm password" value=""
+                    placeholder="Confirm Password" required>
+            </div>
+
+
+            <div class="elem_containers" id="t_and_c_container">
+                <input id="t_and_c" type="checkbox" required>
+                <label for="t_and_c">I accept the terms and conditions</label>
+            </div>
+
+
+            <div id="bottom_container">
+                <div>
+                    <p class="bottom_lines"><small>Go to: </small><a href="sign_in.html">Sign In</a></p>
+                    <p class="bottom_lines"><a href="contact_us.html">Contact Us</a></p>
+                </div>
+
+                <input type="submit" value="Sign Up">
+            </div>
+        </form>
+        <div id="logo_container">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="images/sign_up_logo_360p.png">
+                <source media="(min-width: 768px)" srcset="images/sign_up_logo_200p.png">
+                <source media="(max-width: 768px)" srcset="images/sign_up_logo_120p.png">
+
+                <img src="images/sign_up_logo_360p.png" alt="Sign In Logo">
+            </picture>
+        </div>
+    </div>
+</body>
+
+</html>
